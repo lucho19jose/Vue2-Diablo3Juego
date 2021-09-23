@@ -1,12 +1,17 @@
 <template>
   <div class="home">
-    <h1>Home page</h1>
+    <home-title/>
+
+    <home-form/>
   </div>
 </template>
 
 <script>
+import HomeTitle from './HomeTitle.vue'
+import HomeForm from './HomeForm.vue'
 // @ is an alias to /src
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: { HomeTitle, HomeForm }
 }
 </script>
