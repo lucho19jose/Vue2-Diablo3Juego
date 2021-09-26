@@ -8,3 +8,7 @@ export default {
   name: 'Errow'
 }
 </script>
+<style lang="stylus">
+  .hola
+    font-size 10px
+</style>
