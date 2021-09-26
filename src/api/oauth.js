@@ -7,8 +7,8 @@ import { post } from 'axios'
 // 🔥 Recuerda que debes usar tus datos a la hora de hacer las llamadas a las APIs
 // 🔥 Como dice la documentación, tienes un máximo de llamadas por segundo y por hora a la API.
 // 🔥 Estos datos deberían ser privados
-const clientId = '3f0c3851b8164fe591c6f69b5f073172'
-const clientSecret = 'xn8VMzImY9516CFAIbDND9ZutKNd0I3t'
+const clientId = process.env.VUE_APP_CLIENT_ID
+const clientSecret = process.env.VUE_APP_CLIENT_SECRET
 
 // API URL para hacer oauth
 const region = 'eu'
