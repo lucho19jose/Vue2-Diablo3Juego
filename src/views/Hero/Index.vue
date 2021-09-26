@@ -8,6 +8,7 @@
       <!-- En 'lg' orden 2 -->
       <b-col md="12" lg="8" order-lg="2">
         <base-loading v-if="isLoadingItems"/>
+        <hero-items v-if="items" :items="items"/>
       </b-col>
 
       <!-- 12 columnas de 'xs' -> 'md', 4 columnas desde 'lg' hacia arriba -->
@@ -28,12 +29,13 @@ import BaseLoading from '@/components/BaseLoading'
 import HeroDetailHeader from './HeroDetailHeader'
 import HeroAttributes from './HeroAttributes/Index'
 import HeroSkills from './HeroSkills/Index'
+import HeroItems from './HeroItems/Index'
 import { getApiHero, getApiDetailedHeroItems } from '@/api/search'
 
 export default {
   name: 'HeroView',
   mixins: [setError],
-  components: { BaseLoading, HeroDetailHeader, HeroAttributes, HeroSkills },
+  components: { BaseLoading, HeroDetailHeader, HeroAttributes, HeroSkills, HeroItems },
   data () {
     return {
       isLoadingHero: false,
@@ -112,7 +114,6 @@ export default {
       // Devuelve el contenido de stats y agrega classSlug
       return { ...this.hero.stats, classSlug: this.hero.class }
     }
-
   }
 }
 </script>
