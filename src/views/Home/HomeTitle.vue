@@ -6,6 +6,9 @@
         <a href="https://eu.battle.net/support/es/article/75767" target="_blank" title="Format: YourProfile#1234">battle-tag</a>
       </em>
       and select your region to see your profile!</p>
+    <p class="lead text-muted">
+      example: BattleTag: SuperRambo#2613, Region: EU
+    </p>
     <hr class="mt-5">
   </div>
 </template>

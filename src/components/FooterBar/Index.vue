@@ -1,15 +1,15 @@
 <template>
   <footer class="footer-bar mt-5">
-    <PoweredByFoot :icons="icons"/>
+    <powered-by-foot :icons="icons"/>
 
     <hr class="my-5">
 
     <div class="row">
       <div class="col-sm-6 mb-sm-0 mb-5">
-        <FootLinks/>
+        <foot-links/>
       </div>
       <div class="col-sm-6">
-        <MadeByFoot/>
+        <made-by-foot/>
       </div>
     </div>
 
@@ -30,7 +30,7 @@ export default {
         {
           classes: ['fab', 'vuejs'],
           color: '#4fc08d',
-          href: 'https://vue.js.org/'
+          href: 'https://vuejs.org/'
         },
         {
           classes: ['fab', 'bootstrap'],
@@ -44,7 +44,7 @@ export default {
         {
           classes: ['fab', 'github'],
           color: '#e4e4e4',
-          href: 'https://github.com/baumannzone'
+          href: 'https://github.com/lucho19jose/Vue2-Diablo3Juego'
         },
         {
           classes: ['fab', 'font-awesome'],
